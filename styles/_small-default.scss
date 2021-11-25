@@ -54,7 +54,7 @@ margin: 0 0 27px;
   > p {
     align-self: center;
     font-size: 24px;
-    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -102,10 +102,6 @@ input::placeholder {
   font-size: 9px;
   margin: 25px 0 36px 0;
   align-items: center;
-
-  p {
-    margin: 0;
-  }
 }
 
 input[type=checkbox] {
@@ -129,6 +125,9 @@ input[type=checkbox] {
   margin-right: 6px;
 }
 
+a.forgot-password:visited {
+  color: black;
+}
 .login-button {
   height: 50px;
   width: 300px;
@@ -150,4 +149,22 @@ input[type=checkbox] {
 
 input:last-of-type {
   margin-bottom: 0;
+}
+
+.footer {
+  background: $darkGrey;
+  color: white;
+  font-size: 12px;
+  line-height: 14.5px;
+  text-align: center;
+  text-transform: none;
+  padding: 9px 0;
+
+  address {
+    font-style: normal;
+  }
+
+  a {
+    color: white;
+  }
 }

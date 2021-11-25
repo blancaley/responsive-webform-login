@@ -1,4 +1,5 @@
 html, body, div, span, object, iframe, blockquote, pre,
+p,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -122,7 +123,7 @@ header h1 {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 24px;
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 input {
@@ -195,10 +196,6 @@ input::placeholder {
           align-items: center;
 }
 
-.small-text-wrapper p {
-  margin: 0;
-}
-
 input[type=checkbox] {
   /*   Removes original checkbox style */
   -webkit-appearance: none;
@@ -223,6 +220,10 @@ input[type=checkbox] {
   margin-right: 6px;
 }
 
+a.forgot-password:visited {
+  color: black;
+}
+
 .login-button {
   height: 50px;
   width: 300px;
@@ -244,5 +245,23 @@ input[type=checkbox] {
 
 input:last-of-type {
   margin-bottom: 0;
+}
+
+.footer {
+  background: #504C4C;
+  color: white;
+  font-size: 12px;
+  line-height: 14.5px;
+  text-align: center;
+  text-transform: none;
+  padding: 9px 0;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer a {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
