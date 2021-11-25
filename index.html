@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serve Inloggning</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="/images/serve-logo.svg" alt="Serve Logo">
+      <h1>Inloggning</h1>
+    </header>
+
+    <main>
+      <form class="login-form" method="get" action="loggedin.html">
+        <fieldset>
+          <legend class="screenreader-only">Användarnamn och lösenord</legend>
+
+          <div class="input-wrapper">
+            <label for="username" class="user-icon input-icon"></label>
+            <input type="text" name="name" placeholder="Användarnamn" id="username">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password" class="key-icon input-icon"></label>
+            <input type="password" name="current-password" placeholder="Lösenord" id="password">
+          </div>
+
+          <div class="small-text-wrapper">
+            <label for="rememberMe"><input type="checkbox" name="rememberMe" id="rememberMe">Kom ihåg mig</label>
+            <a href="#" class="forgot-password"><p>Jag har glömt min lösenord</p></a>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Logga in" class="login-button">
+        <p>eller</p>
+        <input type="button" value="Logga in med Google-konto" class="login-button google">
+        <input type="button" value="Logga in med Facebook" class="login-button facebook">
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    <address>
+      Serve inc Fake AB
+      <a href="tel:08999993571">08-99 999 35 71</a>
+      Inteeenriktiggata 99, 13 337, Härstorp
+    </address>
+  </footer>
+</body>
+</html>
